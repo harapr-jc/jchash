@@ -8,9 +8,9 @@ the cryptographical hash for a given password.
 
 ## Dependencies
 
-Runs on Linux.
-Depends on Go standard library and OS commands uuidgen and grep.
-Depends on package `harapr-jc/hashgen` for server and utilties for reuse.
+Linux is supported.
+* Depends on Go standard library
+* Depends on package `harapr-jc/hashgen` for server and utilties for reuse.
 
 ### Starting the `jchash` server
 
@@ -146,6 +146,6 @@ store instead. The Go standard library has sql API, but no database drivers are 
 ## Outstanding Development Items
 
 * Raise code coverage
-* The LRU cache is mock, it doesn't really evict yet
 * Add command line option for backing file
 * Add guard against running the executable twice on same machine
+* Add safety for when backing file size approaches partition size
