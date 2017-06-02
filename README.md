@@ -2,9 +2,7 @@
 
 ## Summary
 
-Provides an executable (jchash) to run a server that services requests for generating
-the cryptographical hash for a given password.
-
+Provides an executable (jchash) that runs the crypto hash server.
 
 ## Dependencies
 
@@ -12,13 +10,26 @@ Linux is supported.
 * Depends on Go standard library
 * Depends on package `harapr-jc/hashgen` for server and utilties for reuse.
 
+## Install
+
+Clone `harapr-jc/hashgen` and `harapr-jc\jchash` to a standard Go workspace.
+
+Example build and install:
+```
+$ cd $GOPATH/src/github.com/harapr-jc/hashgen
+$ go build
+$ cd $GOPATH/src/github.com/harapr-jc/jchash
+$ go build
+$ go install
+```
+
 ### Starting the `jchash` server
 
 ```
-./jchash --host <hostname> --port <port number>
+$ $GOPATH/bin/jchash --host <hostname> --port <port number>
 ```
 
-For a help message, use `./jchash -h`.
+For a help message, use `jchash -h`.
 
 ### Endpoints
 
