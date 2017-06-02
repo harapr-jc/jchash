@@ -12,7 +12,7 @@ Linux is supported.
 
 ## Install
 
-Clone `harapr-jc/hashgen` and `harapr-jc\jchash` to a standard Go workspace.
+Clone `harapr-jc/hashgen` and `harapr-jc/jchash` to a standard Go workspace.
 
 Example build and install:
 ```
